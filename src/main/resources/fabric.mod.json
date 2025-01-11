@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "aplushiemod",
+	"version": "${version}",
+	"name": "A plushie Mod!",
+	"description": "This mod adds some cute plushies to minecraft. Made by Grubma.",
+	"authors": [
+		"Grubma"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Grubma52/A_Plushie_Mod"
+	},
+	"license": "MIT",
+	"icon": "assets/aplushiemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"grubma.aplushiemod.modid.APlushieMod"
+		],
+		"fabric-datagen": [
+			"grubma.aplushiemod.modid.APlushieModDataGenerator"
+		],
+		"client": [
+			"grubma.aplushiemod.modid.APlushieModClient"
+		]
+	},
+	"mixins": [
+		"aplushiemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
