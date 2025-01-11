@@ -1,5 +1,6 @@
 package grubma.aplushiemod.modid;
 
+import grubma.aplushiemod.modid.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +13,6 @@ public class APlushieMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
